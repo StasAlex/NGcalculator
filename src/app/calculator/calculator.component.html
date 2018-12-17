@@ -1,0 +1,22 @@
+<div class="container my-style">
+  <div class="card text-center">
+  <div class="card-header m-3 alert alert-primary">
+    <h2>You can try to calculate something!</h2></div>
+    <div class="card-body">
+      <div class="form-group d-flex">
+        <input [(ngModel)]="num1" type="number" name="num1" class="form-control" placeholder="Write number 1">
+        <input [(ngModel)]="num2" type="number" name="num2" class="form-control" placeholder="Write number 2">
+      </div>
+      <div class="d-flex justify-content-around m-3">
+        <button class="btn btn-success" (click)="sum()">SUM</button>
+        <button class="btn btn-danger" (click)="subtract()">SUB</button>
+        <button class="btn btn-warning" (click)="multiply()">MULTI</button>
+        <button class="btn btn-success" (click)="divide()">DIV</button>
+      </div>
+    </div>
+    <div class="card-footer">
+      <h4>For Num1 = {{num1}} and Num2 = {{num2}} result is {{result}}</h4>
+    </div>
+  </div>
+</div>
+
